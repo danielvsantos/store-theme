@@ -54,7 +54,7 @@
   },
   "tab-content.item#product1": {
     "children": [
-      "carousel#home"
+      "flex-layout.row#description"
     ],
     "props": {
       "tabId": "product1"
