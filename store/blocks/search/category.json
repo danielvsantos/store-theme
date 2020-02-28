@@ -1,0 +1,241 @@
+{
+  "store.search#category": {
+    "blocks": [
+      "search-result-layout#category"
+    ],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "skusFilter": "FIRST_AVAILABLE"
+      }
+    },
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+
+  "search-result-layout#category": {
+    "blocks": [
+      "search-result-layout.desktop.powerplanet#category",
+      "search-result-layout.mobile.powerplanet#category",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop.powerplanet#category": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#category-banner",
+      "flex-layout.row#shelf-category-top",
+      "flex-layout.row#category-description",
+      "flex-layout.row#category-top-category-brands",
+      "flex-layout.row#shelf-brand-new",
+      "flex-layout.row#category-essencial-brands",
+      "flex-layout.row#result"
+    ]
+  },
+
+  "search-result-layout.mobile.powerplanet#category": {
+    "children": [
+      "search-content"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.row#category-departament-top-filters": {
+    "children": [
+      "DepartamentTopFilters"
+    ]
+  },
+
+  "flex-layout.row#category-banner": {
+    "children": [
+      "slider-layout#category-banner"
+    ]
+  },
+
+  "slider-layout#category-banner": {
+    "children": [
+      "info-card#categoryBanner1"
+    ],
+    "props": {
+      "autoPlay": {
+          "timeout": 5000,
+          "stopOnHover": false
+      },
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "infinite": false,
+      "itemsPerPage": {
+        "desktop": 5, 
+          "tablet": 3, 
+          "phone": 2
+      },
+      "blockClass": "categoryBanner"
+    }
+  },
+
+  "info-card#categoryBanner1": {
+    "props": {
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "blockClass": "categoryBanner-info-card"
+    }
+  },
+
+  "flex-layout.row#shelf-category-top": {
+    "children": [
+      "flex-layout.col#shelf-category-top"
+    ]
+  },
+  "flex-layout.col#shelf-category-top": {
+    "children": [
+      "rich-text#shelf-category-top",
+      "shelf#shelf-category-top"
+    ]
+  },
+  "rich-text#shelf-category-top": {
+    "props": {
+      "text": "rich-text#shelf-category-top",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "shelf#shelf-category-top": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "skusFilter": "FIRST_AVAILABLE",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "ofertas top"
+      }
+    }
+  },
+
+  "flex-layout.row#category-description": {
+    "children": [
+      "flex-layout.col#category-description"
+    ]
+  },
+  "flex-layout.col#category-description": {
+    "children": [
+      "rich-text#category-description-title",
+      "rich-text#category-description-content",
+      "rich-text#category-description-subtitle",
+      "rich-text#category-description-subcontent"
+    ]
+  },
+  "rich-text#category-description-title": {
+    "props": {
+      "text": "rich-text#category-description-title",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "rich-text#category-description-content": {
+    "props": {
+      "text": "rich-text#category-description-content",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "rich-text#category-description-subtitle": {
+    "props": {
+      "text": "rich-text#category-subdescription-title",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "rich-text#category-description-subcontent": {
+    "props": {
+      "text": "rich-text#brand-subdescription-content",
+      "blockClass": "test-blocktitle"
+    }
+  },
+
+  "flex-layout.row#category-top-category-brands": {
+    "children": [
+      "flex-layout.col#category-top-category-brands"
+    ]
+  },
+  "flex-layout.col#category-top-category-brands": {
+    "children": [
+      "rich-text#category-top-category-brands",
+      "powerplanet-top-category-brands"
+    ]
+  },
+  "rich-text#category-top-category-brands": {
+    "props": {
+      "text": "rich-text#category-top-category-brands",
+      "blockClass": "categoryTopCategoryBrands"
+    }
+  },
+
+  "flex-layout.row#shelf-category-new": {
+    "children": [
+      "flex-layout.col#shelf-category-new"
+    ]
+  },
+  "flex-layout.col#shelf-category-new": {
+    "children": [
+      "rich-text#shelf-category-new",
+      "shelf#shelf-category-new"
+    ]
+  },
+  "rich-text#shelf-category-new": {
+    "props": {
+      "text": "rich-text#shelf-category-new",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "shelf#shelf-category-new": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "skusFilter": "FIRST_AVAILABLE",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "novedades"
+      }
+    }
+  },
+
+  "flex-layout.row#category-essencial-brands": {
+    "children": [
+      "flex-layout.col#category-essencial-brands"
+    ]
+  },
+  "flex-layout.col#category-essencial-brands": {
+    "children": [
+      "rich-text#category-essencial-brands",
+      "powerplanet-top-category-brands"
+    ]
+  },
+  "rich-text#category-essencial-brands": {
+    "props": {
+      "text": "rich-text#category-essencial-brands",
+      "blockClass": "categoryEssencialBrands"
+    }
+  },
+
+  "flex-layout.row#category-description-bottom": {
+    "children": [
+      "powerplanet-category-description-bottom"
+    ]
+  }
+}

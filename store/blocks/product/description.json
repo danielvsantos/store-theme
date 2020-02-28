@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#description": {
+        "props": {
+          "marginBottom": 7
+        },
+        "children": [
+          "product-description"
+        ]
+    }
+}

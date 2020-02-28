@@ -1,0 +1,78 @@
+{
+    "flex-layout.row#product-reinsurance": {
+        "children": [
+            "flex-layout.col#product-reinsurance"
+        ],
+        "props": {
+            "blockClass": "productReinsuranceRow"
+        }    
+    },
+    "flex-layout.col#product-reinsurance": {
+        "children": [
+            "slider-layout#product-reinsurance"
+        ],
+        "props": {
+            "blockClass": "productReinsuranceCol"
+        }
+    },
+
+    "slider-layout#product-reinsurance": {
+        "children": [
+            "info-card#productReinsurance1",
+            "info-card#productReinsurance2",
+            "info-card#productReinsurance3",
+            "info-card#productReinsurance4",
+            "info-card#productReinsurance5"
+        ],
+        "props": {
+            "autoPlay": {
+                "timeout": 5000,
+                "stopOnHover": false
+            },
+            "showNavigationArrows": "mobileOnly",
+            "showPaginationDots": "never",
+            "infinite": false,
+            "itemsPerPage":{
+                "desktop": 5, 
+                "tablet": 3, 
+                "phone": 2
+            },
+            "blockClass": "reinsurance"
+        }
+    },
+    
+    "info-card#productReinsurance1": {
+      "props": {
+        "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "blockClass": "reinsurance-info-card"
+      }
+    },
+
+    "info-card#productReinsurance2": {
+      "props": {
+        "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "blockClass": "reinsurance-info-card"
+      }
+    },
+
+    "info-card#productReinsurance3": {
+      "props": {
+        "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "blockClass": "reinsurance-info-card"
+      }
+    },
+
+    "info-card#productReinsurance4": {
+      "props": {
+        "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "blockClass": "reinsurance-info-card"
+      }
+    },
+
+    "info-card#productReinsurance5": {
+      "props": {
+        "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "blockClass": "reinsurance-info-card"
+      }
+    }       
+}

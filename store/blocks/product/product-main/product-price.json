@@ -1,0 +1,30 @@
+{
+    "flex-layout.row#product-price": {
+        "children": [
+            "flex-layout.col#product-price"
+        ],
+        "props": {
+            "marginBottom": 5,
+            "blockClass": "productPriceRow"
+        }    
+    },
+
+    "flex-layout.col#product-price": {
+        "children": [
+            "product-price#product-details"
+        ],
+        "props": {
+            "blockClass": "productPriceCol"
+        }
+    },
+
+    "product-price#product-details": {
+        "props": {
+            "labelSellingPrice": "IVA Incluido",
+            "labelListPrice": "antes",
+            "showListPrice": true,
+            "showSavings": true,
+            "blockClass": "productPrice"
+        }
+    }
+}

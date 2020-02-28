@@ -1,0 +1,229 @@
+{
+  "store.search#department": {
+    "blocks": [
+      "search-result-layout#department"
+    ],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "skusFilter": "FIRST_AVAILABLE"
+      }
+    }
+  },
+
+  "search-result-layout#department": {
+    "blocks": [
+      "search-result-layout.desktop.powerplanet#department",
+      "search-result-layout.mobile.powerplanet#department",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop.powerplanet#department": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#department-category-menu",
+      "flex-layout.row#department-banner",
+      "flex-layout.row#shelf-department-top",
+      "flex-layout.row#department-description",
+      "flex-layout.row#top-department-brands",
+      "flex-layout.row#shelf-brand-new",
+      "flex-layout.row#essencial-department",
+      "flex-layout.row#result"
+    ]
+  },
+
+  "search-result-layout.mobile.powerplanet#department": {
+    "children": [
+      "search-content"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.row#department-category-menu": {
+    "children": [
+      "category-menu#department-category-menu"
+    ],
+    "props": {
+      "blockClass": "departmentCategoryMenu"
+    }
+  },
+
+  "category-menu#department-category-menu": {
+    "props": {
+      "showPromotionCategory": false,
+      "showGiftCategory": false,
+      "showAllDepartments": true,
+      "showSubcategories": false,
+      "menuDisposition": "left",
+      "departments": []
+    }
+  },
+
+  "flex-layout.row#department-banner": {
+    "children": [
+      "slider-layout#department-banner"
+    ]
+  },
+
+  "slider-layout#department-banner": {
+    "children": [
+      "info-card#departmentBanner1"
+    ],
+    "props": {
+      "autoPlay": {
+          "timeout": 5000,
+          "stopOnHover": false
+      },
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "infinite": false,
+      "itemsPerPage": {
+        "desktop": 5, 
+          "tablet": 3, 
+          "phone": 2
+      },
+      "blockClass": "departmentBanner"
+    }
+  },
+
+  "info-card#departmentBanner1": {
+    "props": {
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "blockClass": "departmentBanner-info-card"
+    }
+  },
+
+  "flex-layout.row#shelf-department-top": {
+    "children": [
+      "flex-layout.col#shelf-department-top"
+    ]
+  },
+  "flex-layout.col#shelf-department-top": {
+    "children": [
+      "rich-text#shelf-department-top",
+      "shelf#shelf-department-top"
+    ]
+  },
+  "rich-text#shelf-department-top": {
+    "props": {
+      "text": "rich-text#shelf-department-top",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "shelf#shelf-department-top": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "skusFilter": "FIRST_AVAILABLE",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "ofertas top"
+      }
+    }
+  },
+
+  "flex-layout.row#department-description": {
+    "children": [
+      "flex-layout.col#department-description"
+    ]
+  },
+  "flex-layout.col#department-description": {
+    "children": [
+      "rich-text#department-description-title",
+      "rich-text#department-description-content",
+      "rich-text#department-description-subtitle",
+      "rich-text#department-description-subcontent"
+    ]
+  },
+  "rich-text#department-description-title": {
+    "props": {
+      "text": "rich-text#department-description-title",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "rich-text#department-description-content": {
+    "props": {
+      "text": "rich-text#department-description-content",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "rich-text#department-description-subtitle": {
+    "props": {
+      "text": "rich-text#department-subdescription-title",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "rich-text#department-description-subcontent": {
+    "props": {
+      "text": "rich-text#department-subdescription-content",
+      "blockClass": "test-blocktitle"
+    }
+  },
+
+  "flex-layout.row#top-department-brands": {
+    "children": [
+      "powerplanet-top-category-brands"
+    ]
+  },
+
+  "flex-layout.row#shelf-department-new": {
+    "children": [
+      "flex-layout.col#shelf-department-new"
+    ]
+  },
+  "flex-layout.col#shelf-department-new": {
+    "children": [
+      "rich-text#shelf-department-new",
+      "shelf#shelf-department-new"
+    ]
+  },
+  "rich-text#shelf-department-new": {
+    "props": {
+      "text": "rich-text#shelf-department-new",
+      "blockClass": "test-blocktitle"
+    }
+  },
+  "shelf#shelf-department-new": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "skusFilter": "FIRST_AVAILABLE",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "novedades"
+      }
+    }
+  },
+
+  "flex-layout.row#essencial-department": {
+    "children": [
+      "powerplanet-top-category-brands"
+    ]
+  },
+
+  "flex-layout.row#department-description-bottom": {
+    "children": [
+      "powerplanet-category-description-bottom"
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+    "flex-layout.row#product-sku-options": {
+        "children": [
+            "flex-layout.col#product-sku-options"
+        ],
+        "props": {
+            "marginBottom": 5,
+            "blockClass": "productSkuOptionsRow"
+        }    
+    },
+
+    "flex-layout.col#product-sku-options": {
+        "children": [
+            "flex-layout.row#product-sku-available",
+            "flex-layout.row#product-sku-selector",
+            "flex-layout.row#product-sku-quantity",
+            "flex-layout.row#product-shipping-info"
+        ],
+        "props": {
+            "blockClass": "productSkuOptionsCol"
+        }
+    },
+
+    "flex-layout.row#product-sku-available": {
+        "children": [
+            "flex-layout.col#product-sku-available-text",
+            "flex-layout.col#product-sku-available-component"
+        ],
+        "props": {
+            "blockClass": "productSkuAvailableRow"
+        }
+    },
+
+    "flex-layout.col#product-sku-available-text": {
+        "children": [
+            "rich-text#product-sku-available-text"
+        ],
+        "props": {
+            "blockClass": "productSkuAvailableTextCol"
+        }
+    },
+
+    "rich-text#product-sku-available-text": {
+        "props": {
+          "text": "disponibilidad",
+          "blockClass": "richTextSkuOptions"
+        }
+    },
+
+    "flex-layout.col#product-sku-available-component": {
+        "children": [
+            "shippingdate"
+        ],
+        "props": {
+            "blockClass": "productSkuAvailableColComponent"
+        }
+    },
+
+    "flex-layout.row#product-sku-selector": {
+        "children": [
+            "flex-layout.col#product-sku-selector-component"
+        ],
+        "props": {
+            "blockClass": "productSkuSelectorRow"
+        }
+    },
+
+    "flex-layout.col#product-sku-selector-component": {
+        "children": [
+            "sku-selector"
+        ],
+        "props": {
+            "blockClass": "productSkuAvailableColComponent"
+        }
+    },
+
+    "flex-layout.row#product-sku-quantity": {
+        "children": [
+            "flex-layout.col#product-sku-quantity-component"
+        ],
+        "props": {
+            "blockClass": "productSkuQuantityRow"
+        }
+    },
+
+    "flex-layout.col#product-sku-quantity-component": {
+        "children": [
+            "product-quantity"
+        ],
+        "props": {
+            "blockClass": "productSkuQuantityColComponent"
+        }
+    },
+
+    "flex-layout.row#product-shipping-info": {
+        "children": [
+            "flex-layout.col#product-shipping-info-text",
+            "flex-layout.col#product-shipping-info-component"
+        ],
+        "props": {
+            "blockClass": "productSkuAvailableRow"
+        }
+    },
+
+    "flex-layout.col#product-shipping-info-text": {
+        "children": [
+            "rich-text#product-shipping-info-text"
+        ],
+        "props": {
+            "blockClass": "productSkuAvailableTextCol"
+        }
+    },
+
+    "rich-text#product-shipping-info-text": {
+        "props": {
+          "text": "envío",
+          "blockClass": "richTextSkuOptions"
+        }
+    },
+
+    "flex-layout.col#product-shipping-info-component": {
+        "children": [
+            "flex-layout.row#product-shipping-info-free",
+            "flex-layout.row#product-shipping-info-24"
+        ],
+        "props": {
+            "blockClass": "productShippingInfoColComponent"
+        }
+    },
+
+    "flex-layout.row#product-shipping-info-free": {
+        "children": [
+            "flex-layout.col#product-shipping-info-free-text",
+            "flex-layout.col#product-shipping-info-free-value"
+        ],
+        "props": {
+            "blockClass": "productShippingInfoFreeRow"
+        }
+    },
+
+    "flex-layout.col#product-shipping-info-free-text": {
+        "children": [
+            "rich-text#product-shipping-info-free-text"
+        ],
+        "props": {
+            "blockClass": "productShippingInfoFreeCol"
+        }
+    },
+
+    "flex-layout.col#product-shipping-info-free-value": {
+        "children": [
+            "rich-text#product-shipping-info-free-value"
+        ],
+        "props": {
+            "blockClass": "productShippingInfoFreeCol"
+        }
+    },
+
+    "rich-text#product-shipping-info-free-text": {
+        "props": {
+          "text": "envío 48/72h",
+          "blockClass": "richTextShippingInfoFree"
+        }
+    },
+
+    "rich-text#product-shipping-info-free-value": {
+        "props": {
+          "text": "gratis",
+          "blockClass": "richTextShippingInfoFree"
+        }
+    },
+
+    "flex-layout.row#product-shipping-info-24": {
+        "children": [
+            "flex-layout.col#product-shipping-info-24-text",
+            "flex-layout.col#product-shipping-info-24-value"
+        ],
+        "props": {
+            "blockClass": "productShippingInfo24Row"
+        }
+    },
+
+    "flex-layout.col#product-shipping-info-24-text": {
+        "children": [
+            "rich-text#product-shipping-info-24-text"
+        ],
+        "props": {
+            "blockClass": "productShippingInfo24Col"
+        }
+    },
+
+    "flex-layout.col#product-shipping-info-24-value": {
+        "children": [
+            "rich-text#product-shipping-info-24-value"
+        ],
+        "props": {
+            "blockClass": "productShippingInfo24Col"
+        }
+    },
+
+    "rich-text#product-shipping-info-24-text": {
+        "props": {
+          "text": "envío 24h",
+          "blockClass": "richTextShippingInfo24"
+        }
+    },
+
+    "rich-text#product-shipping-info-24-value": {
+        "props": {
+          "text": "desde 3.95€",
+          "blockClass": "richTextShippingInfo24"
+        }
+    }
+}

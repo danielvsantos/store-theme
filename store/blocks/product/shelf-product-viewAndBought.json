@@ -1,0 +1,38 @@
+{
+    "flex-layout.row#shelf-product-viewAndBought": {
+        "children": [
+        "flex-layout.col#shelf-product-viewAndBought"
+        ]
+    },
+    "flex-layout.col#shelf-product-viewAndBought": {
+        "children": [
+        "rich-text#shelf-product-viewAndBought",
+        "shelf#shelf-product-viewAndBought"
+        ]
+    },
+    "rich-text#shelf-product-viewAndBought": {
+        "props": {
+        "text": "rich-text#shelf-product-viewAndBought",
+        "blockClass": "test-blocktitle"
+        }
+    },
+    "shelf#shelf-product-viewAndBought": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC",
+            "paginationDotsVisibility": "desktopOnly",
+            "skusFilter": "FIRST_AVAILABLE",
+            "productList": {
+              "maxItems": 10,
+              "itemsPerPage": 5,
+              "minItemsPerPage": 1,
+              "scroll": "BY_PAGE",
+              "arrows": true,
+              "titleText": "view and bought"
+            },
+            "recommendation": "viewandBought"
+        }
+    }
+}

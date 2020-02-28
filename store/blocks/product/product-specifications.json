@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#product-specifications": {
+        "props": {
+          "marginBottom": 7
+        },
+        "children": [
+          "product-specification-badges"
+        ]
+    }
+}

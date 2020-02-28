@@ -1,0 +1,60 @@
+{
+    "flex-layout.row#product-title": {
+        "children": [
+            "flex-layout.col#product-title"
+        ],
+        "props": {
+            "marginBottom": 5,
+            "blockClass": "productTitleRow"
+        }    
+    },
+
+    "flex-layout.col#product-title": {
+        "children": [
+            "vtex.store-components:product-name",
+            "product-rating-summary",
+            "flex-layout.row#product-reference"
+        ],
+        "props": {
+            "blockClass": "productTitleCol"
+        }
+    },
+
+    "flex-layout.row#product-reference": {
+        "children": [
+            "flex-layout.col#product-reference",
+            "flex-layout.col#product-ean",
+            "flex-layout.col#product-brand"
+        ],
+        "props": {
+            "blockClass": "productTitleReferenceRow"
+        }    
+    },
+
+    "flex-layout.col#product-reference": {
+        "children": [
+            "product-identifier.product"
+        ],
+        "props": {
+            "blockClass": "productTitleReferenceCol"
+        }
+    },
+
+    "flex-layout.col#product-ean": {
+        "children": [
+            "vtex.store-components:product-brand"
+        ],
+        "props": {
+            "blockClass": "productTitleReferenceCol"
+        }
+    },
+
+    "flex-layout.col#product-brand": {
+        "children": [
+            "vtex.store-components:product-brand"
+        ],
+        "props": {
+            "blockClass": "productTitleReferenceCol"
+        }
+    }
+}

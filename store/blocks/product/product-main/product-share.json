@@ -1,0 +1,32 @@
+{
+    "flex-layout.row#product-share": {
+        "children": [
+            "flex-layout.col#product-share"
+        ],
+        "props": {
+            "marginBottom": 5,
+            "blockClass": "productShareRow"
+        }    
+    },
+  
+    "flex-layout.col#product-share": {
+        "children": [
+            "share#product-details"
+        ],
+        "props": {
+            "marginBottom": 5,
+            "blockClass": "productShareCol"
+        }    
+    },
+  
+    "share#product-details": {
+        "props": {
+          "social": {
+            "Facebook": true,
+            "WhatsApp": true,
+            "Twitter": true,
+            "Pinterest": true
+          }
+        }
+    }
+}
