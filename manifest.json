@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "3.25.0",
+  "version": "3.27.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -39,16 +39,32 @@
     "vtex.sticky-layout": "0.x",
     "vtex.product-customizer": "2.x",
     "vtex.stack-layout": "0.x",
+    "vtex.slider-layout": "0.x",
     "vtex.product-specification-badges": "0.x",
     "vtex.product-review-interfaces": "1.x",
     "vtex.telemarketing": "2.x",
+    "vtex.category-menu": "2.x",
+    "vtex.tab-layout": "0.x",
     "vtex.order-placed": "1.x",
     "vtex.checkout-summary": "0.x",
     "vtex.product-list": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-bookmark-interfaces": "1.x",
-    "vtex.slider-layout": "0.x",
-    "vtex.store-image": "0.x"
+    "vtex.store-image": "0.x",
+    "powerplanet.shipping-minicart": "0.x",
+    "powerplanet.powerplanet-megamenu": "0.x",
+    "powerplanet.powerplanet-corporative-pages": "1.x",
+    "powerplanet.powerplanet-block-newsletter": "0.x",
+    "powerplanet.powerplanet-popup-cookies": "1.x",
+    "powerplanet.powerplanet-home-sections": "0.x",
+    "powerplanet.powerplanet-mini-banners": "0.x",
+    "powerplanet.powerplanet-favorites": "1.x",
+    "powerplanet.powerplanet-top-category-brands": "1.x",
+    "powerplanet.powerplanet-category-description-bottom": "0.x",
+    "powerplanet.powerplanet-review-app": "1.x",
+    "powerplanet.powerplanet-departament-top-filters": "0.x",
+    "powerplanet.powerplanet-teaser-app": "0.x",
+    "powerplanet.powerplanet-shippingdate": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

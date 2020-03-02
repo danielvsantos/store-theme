@@ -1,0 +1,57 @@
+{
+    "store.custom.corporative-pages":{
+        "allowed":[
+            "slider-layout",
+            "corporative-pages"
+        ]
+    },
+    "store.home.powerplanet": {
+        "allowed": [
+            "powerplanet-home-sections",
+            "powerplanet-mini-banners"
+        ]
+    },
+
+    "search-result-layout.desktop.powerplanet": {
+        "allowed": [
+            "slider-layout",
+            "DepartamentTopFilters",
+            "rich-text",
+            "shelf",
+            "powerplanet-top-category-brands",
+            "powerplanet-category-description-bottom"
+        ]
+    },
+
+    "search-result-layout.mobile.powerplanet": {
+        "allowed": [
+            "slider-layout",
+            "DepartamentTopFilters",
+            "rich-text",
+            "shelf",
+            "powerplanet-top-category-brands",
+            "powerplanet-category-description-bottom"
+        ]
+    },
+
+    "store.product-review-form": {
+        "allowed": [
+          "product-review-form"
+        ]
+    },
+
+    "store.custom.search-result-layout-landing-page": {
+        "allowed": [
+            "slider-layout",
+            "rich-text",
+            "shelf",
+            "powerplanet-top-category-brands",
+            "search-result-layout.customQuery"
+        ]
+    },
+
+    "store.login.powerplanet": {
+        "allowed": ["login"],
+        "required": ["login-content"]
+    }
+}
